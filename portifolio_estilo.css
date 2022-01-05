@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+i:not(){
+    font-style: italic;
+}
+
+/* Banner-Estilo */
+div#banner{
+    text-align: center;
+    background: linear-gradient(96deg,white, blueviolet, purple, blue);
+    min-height: 250px;
+
+}
+
+
+/* Avatar-Estilo */
+#perfil-img{
+    border-radius: 200pc;
+    width: 120px;
+    margin-top: 100px;
+}
+
+#perfil::before{
+    content: "BA";
+    background: whitesmoke;
+    border-radius: 250px;
+    padding-inline: 10px;
+    display: flexbox;
+}
+#perfil::after{
+    content: "17";
+    background: whitesmoke;
+    border-radius: 250px;
+    padding-inline: 10px;
+    display: flexbox;
+}
+
+/* Info Pessoais- Estilo */
+div#info-pessoais{
+    margin-top: 18px;
+    text-align: center;
+}
+
+/* Estande - Estilo */
+a.cards{
+    text-decoration: none;
+    color: black;
+    margin-inline: 14px;
+    
+}
+
+a.cards>div{
+    background-color: white;
+    border: blue 8px groove;
+    width: min-content;
+    padding-inline: 50px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+a.cards>div>h2{
+    margin-top: 40px;
+}
+a.cards>div:hover>h2{
+    margin: 0px;
+}
+
+a.cards>div>p{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 7px;
+}
+
+div#estande-contatos{
+    display:inline-flex;
+}
+
+div#estande{
+    text-align: center;
+}
+
+a.cards>div:hover{
+    border-color: darkblue;
+    margin-top: 25px;
+}
+
+
+/* Botao Email- Estilo */
+a>button{
+    width: 100%;
+    border-color: darkblue;
+    background-color: darkblue;
+    border-style: groove;
+    padding-block: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    transition: 1.3s;
+}
+
+a>button:hover{
+    background: purple;
+    background-repeat: round;
+    color: white;
+    padding-block: 24px;
+}
+
+a.card-project{
+    margin-inline: 10px;
+}
+
+div.projeto{
+    background-color: white;
+    border: blue 8px groove;
+    padding-inline: 30px;
+    border-radius: 20px;
+    height: 100px;
+    transition: 1.1s;
+}
+div.projeto>h3{
+    margin-top: 30px;
+}
+
+div.projeto:hover{
+    background-color: blue;
+    color: white;
+    padding-inline: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    display: inline-flex;
+}
+
+ul>li:first-child{
+    width: 220px;
+}
+
+
+@media screen and (max-width: 798px){
+    div#estande-contatos{
+        display: inline-block;
+    }
+    div#estande{
+        margin-block: 10px;
+        text-align: center;
+    }
+    div.meustrabalhos-estande{
+        display: block;
+    }
+    ul{
+        display: block;
+    }
+    ul>li{
+        width: auto;
+    }
+    ul>li:first-child{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+    div.projeto>p{
+        font-size: 10px;
+    }
+    div.projeto>h3{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+}
+
+

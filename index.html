@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaique Dias - Portifolio</title>
+    <link rel="stylesheet" href="./portifolio_estilo.css">
+    <link rel="stylesheet" href="./socialmediastyle.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <div id="banner">
+        <div id="perfil">
+            <!-- Perfil -->
+            <img src="perfil_teste.jfif" alt="Perfil não carregado"
+            height="120px" id="perfil-img">
+        </div>
+    </div>
+    <div id="info-pessoais">
+        <h2 title >Kaique Dias Pereira</h2>
+        <h3 style="margin-top: 13px;"><i>“Você não pode ter medo de falhar. É a única maneira de você ter sucesso – você não terá sucesso o tempo todo, e eu sei disso.”</i> <br> - Lebron James</h3>
+    </div>
+    <div id="estande">
+        <div style="margin-top: 30px;" id="estande-contatos">
+            <a href="https://instagram.com/ynmdiaszinm" class="cards" target="_blank">
+                <div id="instagram">
+                    <h2>Instagram</h2>
+                </div>
+            </a>
+        
+            <a href="https://www.facebook.com/kaique.diaspereira.1/" class="cards" target="_blank">
+                <div id="facebook">
+                    <h2>Facebook</h2>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kaique-diaz-aa1055212/" class="cards" target="_blank"> 
+                <div id="linkedin">
+                    <h2><i class="changecolor">Linke</i>din</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="meustrabalhos-div" style="text-align: center; margin-top: 20px;">
+        <h2>Meus Trabalhos</h2>
+        <div class="meustrabalhos-estande" style="margin-top: 10px; display: inline-flex;">
+            <a href="https://flashdesenvolvimentos.github.io/portifolio" class="card-project" target="_blank">
+                <div class="projeto">
+                    <h3>Site da Minha Empresa</h3>
+                    <p>Website feito em bootstrap</p>
+                </div>
+            </a>
+            <a href="https://flashdesenvolvimentos.github.io/sistema-de-boletimV2" class="card-project" target="_blank">
+                <div class="projeto">
+                    <h3>Sistema de Boletim</h3>
+                    <p>Feito em JS, HTML, CSS e Jquery</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="minhascompentencias" style="text-align: center; margin-top: 20px;">
+        <h2>Minhas Compentencias</h2>
+        <div id="minhascompentencias-estande" style="margin-top: 8px;">
+            <style>
+                ul>li{
+                    margin-top: 7px;
+                    padding-inline: 12px;
+                    margin-inline: 8px;
+                    transition: 1.2s;
+                    padding-block: 15px;
+                }
+                ul>li:hover{
+                    color: white;
+                    background-color: darkblue;
+                    border-radius: 40px;
+                }
+                
+            </style>
+            <ul style="list-style: none;">
+                <li>Desenvolvimento em <br> Python e JavaScript</li>
+                <li>Dominio em HTML e CSS</li>
+                <li>Dominio em Podcast e Videoconferência</li>
+                <li>Operador de Computador - Senai</li>
+                <li>Marketing e Vendas Intermediário</li>
+                <li>Inglês Intermediário</li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin-top: 20px; text-align: center; margin-inline: 15px; margin-bottom: 30px;">
+        <abbr title="Email de contato"><a href="mailto:kaiquedias2013@gmail.com" target="_blank"><button>Enviar Email</button></a></abbr>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $("#instagram, #linkedin, #facebook").hover(
+        function(){
+        if(this.id === "instagram"){
+            $(this).append("<p>Minha Vida Pessoal</p>")
+        }
+        if(this.id === "linkedin"){
+            $(this).append("<p>Minha Vida Profissional</p>")
+
+        }
+        if(this.id === "facebook"){
+            $(this).append("<p>Meus Hobbies</p>")
+        }
+        },
+        function(){
+            $(this).find("p").last().remove()
+        }
+    )
+</script>
+</html>
